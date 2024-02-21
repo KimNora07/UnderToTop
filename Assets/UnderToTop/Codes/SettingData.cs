@@ -8,18 +8,18 @@ public class SettingData
 {
     public enum Resolution
     {
-        p360,
-        p720,
-        p1080,
         p1440,
-        p2160
+        p1080,
+        p720,
+        p360
     }
+
     public Resolution resolution;
-    public enum WindowType
+    public FullScreenMode screenMode;
+
+    public SettingData()
     {
-        FULL,
-        BORDERLESS,
-        WINDOW
+        resolution = Resolution.p1080;
+        screenMode = FullScreenMode.ExclusiveFullScreen;
     }
-    public WindowType windowType;
 }
